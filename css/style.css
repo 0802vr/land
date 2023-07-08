@@ -3495,8 +3495,12 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
           justify-content: space-between;
 }
 
-.blog__box img {
+.blog__box_img {
   width: 27%;
+}
+
+.blog__box_img img {
+  width: 100%;
 }
 
 .blog__conteiner {
