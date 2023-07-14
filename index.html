@@ -5,12 +5,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230708130008">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230714215455">
 	<title>Главная</title>
 	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap&_v=20230708130008" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap&_v=20230714215455" rel="stylesheet">
 
 	
 </head>
@@ -33,10 +33,18 @@
       </svg>
       <div class="header__box">
             <div class="header__links">
-                <a href="#">Услуги</a>
+                <div class="header__link">
+                    <p>Услуги</p> 
+                    <div class="header__link_svg"></div>                     
+                </div>
                 <a href="#">Проекты</a>
                 <a href="#">Вакансии</a>
                 <a href="#">Блог</a>
+            </div>
+            <div class="header__link_menu">
+                <p>UX/UI дизайн</p>
+                <p>Брендинг</p>
+                <p>Креативные решения</p>
             </div>
             <button class="header__btn">Начать проект</button>
       </div>
@@ -45,8 +53,12 @@
 <main>   
    <section class="container banner__main">
       <h2 class="banner__main_title"> Эмоции от увиденного всегда остаются в памяти</h2>
-      <div class="banner__main_box">          
+      <div class="banner">   
       </div>
+      <div class="blank"></div>
+      <div class="banner second">  
+      </div>
+      <div class="blank other"></div>
       <!-- <div class="banner__main_box">          
       </div>
       <div class="banner__main_box">          
@@ -74,6 +86,7 @@
                <p class="slider__box_title_btn">Креативные решения</p>
             </div>
           </div>
+          <img class="line__link line__link_sadari" src="./img/line1.svg" alt="link">
       </div>
       <div class="slider__box_profit paralex">
          <div class="fixed">
@@ -189,6 +202,7 @@
                <p class="blog__title">Что такое UX и UI дизайн и кто такие пользователи?</p>
                <p class="blog__text">В продуктовом дизайне на слово user (пользователь) и производные слова лежат в основе взаимоотношений между человеком и технологиями.</p>
                <p class="blog__time"><picture><source srcset="./img/t1.webp" type="image/webp"><img src="./img/t1.png" alt=""></picture> 8 мин</p>
+              
             </div>
             <div class="blog__conteiner_rigth">
                <button class="blog__kind">Статья</button>
@@ -204,19 +218,22 @@
 	<footer class="footer container">
 		 <div class="footer__line1">
 			<h1 class="footer__title">Начать проект</h1>
-			<svg xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="0 0 92 92" fill="none">
+			<svg xmlns="http://www.w3.org/2000/svg"  fill="none">
 				<path d="M92 0V87.7463H91.9648L78.5254 79.9419V22.9912L9.53422 92L0 82.4731L82.501 0.0351548V0H92Z" fill="#141414"/>
 				<path d="M3.375 0H73.7279L60.174 12.8529H11.2313L3.375 0.0335586V0Z" fill="#141414"/>
 			  </svg>
 		 </div>
 		 <div class="footer__line2">
 			<p>Yanstoke.team@gmail.com</p>
-			<p>+7 904 667-01-48</p>
-			<div class="footer__contacts">
-				<p>Telegram</p>
-				<p>WhatsApp</p>
-				<p>Behance</p>
+			<div class="footer__box">
+				<p>+7 904 667-01-48</p>
+				<div class="footer__contacts">
+					<p>Telegram</p>
+					<p>WhatsApp</p>
+					<p>Behance</p>
+				</div>
 			</div>
+			
 			
 		 </div>
 		 <div class="footer__line3">
@@ -227,7 +244,7 @@
 		 
 	</footer>
 
-	<script src="js/app.min.js?_v=20230708130008"></script>
+	<script src="js/app.min.js?_v=20230714215455"></script>
 	</body>
 
 	</html>
