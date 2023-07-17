@@ -5,12 +5,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230715162508">
+	<link rel="stylesheet" href="css/style.min.css">
 	<title>Главная</title>
 	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap&_v=20230715162508" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
 
 	
 </head>
@@ -19,7 +19,7 @@
 
 
       <header class="header container">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 24" fill="none">
+    <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 24" fill="none">
         <path d="M42 24H37.6526L35.3908 18H25.6679L23.3474 24H19L28.1941 0H32.8352L42 24ZM34.3627 14.3779L30.5441 3.92627L26.6667 14.3779H34.3627Z" fill="#141414"/>
         <path d="M66 24H61.9328L48.4986 6.41475V24H44V0H48.4062L61.5014 17.1152V0H66V24Z" fill="#141414"/>
         <path d="M78.7082 24C76.1501 24 73.83 23.4483 71.7479 22.3448C69.6657 21.2414 68.4164 19.5586 68 17.269H72.5212C72.8484 18.4552 73.5921 19.3379 74.7224 19.9172C75.8527 20.4966 77.1912 20.8 78.6785 20.8C80.2847 20.8 81.6827 20.5241 82.813 19.9448C83.9433 19.3655 84.5085 18.5379 84.5085 17.4345C84.5085 16.5241 84.1218 15.8069 83.3484 15.2828C82.5751 14.7586 81.4745 14.3448 80.017 14.069L75.1686 13.131C73.2054 12.8 71.6586 12.1103 70.4986 11.0897C69.3385 10.069 68.7734 8.66207 68.7734 6.89655C68.7734 5.46207 69.2195 4.22069 70.0821 3.2C70.9448 2.17931 72.1346 1.37931 73.6218 0.827586C75.1091 0.275862 76.745 0 78.5595 0C80.5822 0 82.3371 0.331035 83.7946 0.993104C85.2521 1.65517 86.4122 2.51034 87.2153 3.53103C88.0482 4.57931 88.5241 5.71034 88.6728 6.92414H84.2408C84.0028 5.62759 83.3782 4.68966 82.3966 4.11034C81.415 3.53103 80.136 3.25517 78.619 3.25517C77.1912 3.25517 75.9717 3.53103 74.9603 4.13793C73.949 4.74483 73.4433 5.54483 73.4433 6.62069C73.4433 8.27586 74.7819 9.32414 77.4887 9.73793L82.1884 10.6759C86.7394 11.5034 89 13.7655 89 17.4897C89 19.4207 88.0184 20.9931 86.085 22.2069C84.1516 23.4207 81.6827 24 78.6785 24H78.7082Z" fill="#141414"/>
@@ -35,7 +35,9 @@
             <div class="header__links">
                 <div class="header__link">
                     <p>Услуги</p> 
-                    <div class="header__link_svg"></div>                     
+                    <svg class="header__link_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 6"  >
+                        <path d="M4 3.49691e-07L7.4641 6L0.535898 6L4 3.49691e-07Z" />
+                        </svg>          
                 </div>
                 <a href="#">Проекты</a>
                 <a href="#">Вакансии</a>
@@ -86,7 +88,7 @@
                <p class="slider__box_title_btn">Креативные решения</p>
             </div>
           </div>
-          <img class="line__link line__link_sadari" src="./img/line1.svg" alt="link">
+           
       </div>
       <div class="slider__box_profit paralex">
          <div class="fixed">
@@ -143,14 +145,19 @@
       <h6>Блог</h6>
       <div class="blog__box">
          <div class="blog__box_img">
-            <picture><source srcset="./img/i1.webp" type="image/webp"><img src="./img/i1.png" alt=""></picture>
+            <img src="./img/i1.svg" alt="">
          </div>
          
          <div class="blog__conteiner">
             <div class="blog__conteiner_left">
                <p class="blog__title">Запуск сайта Yanstoke</p>
-               <p class="blog__text">Всем привет, меня зовут Богдан Михайловский я основатель студии Yanstoke. Хочу поделиться с вами от лица проекта кратко о том как мы пришли к тому чтобы создать свою digital студию.</p>
-               <p class="blog__time"> <picture><source srcset="./img/t1.webp" type="image/webp"><img src="./img/t1.png" alt=""></picture>10 мин</p>
+               <!-- <div class="blog__conteiner_left_box"> -->
+                  <p class="blog__text">Всем привет, меня зовут Богдан Михайловский я основатель студии Yanstoke. Хочу поделиться с вами от лица проекта кратко о том как мы пришли к тому чтобы создать свою digital студию.</p>
+                  <div class="blog__time">
+                     <img src="./img/t1.svg" alt="time"> 
+                     <p>10 мин</p>
+                  </div>
+               <!-- </div> -->               
             </div>
             <div class="blog__conteiner_rigth">
                <button class="blog__kind">Обновление</button>
@@ -161,13 +168,16 @@
       </div>
       <div class="blog__box">
          <div class="blog__box_img">
-            <picture><source srcset="./img/i2.webp" type="image/webp"><img src="./img/i2.png" alt=""></picture>
+            <img src="./img/i2.svg" alt="">
          </div>
          <div class="blog__conteiner">
             <div class="blog__conteiner_left">
                <p class="blog__title">Что такое Customer Journey Map (CJM)</p>
                <p class="blog__text">Карты пользовательского пути один из самых популярных UX-инструментов. Их представляют множеством способов, раскатывая как на листы A4, так и покрывая ими коридоры офиса.</p>
-               <p class="blog__time"><picture><source srcset="./img/t1.webp" type="image/webp"><img src="./img/t1.png" alt=""></picture> 9 мин</p>
+               <div class="blog__time">
+                  <img src="./img/t1.svg" alt="time"> 
+                  <p>9 мин</p>
+               </div>
             </div>
             <div class="blog__conteiner_rigth">
                <button class="blog__kind">Статья</button>
@@ -178,13 +188,16 @@
       </div>
       <div class="blog__box">
          <div class="blog__box_img">
-            <picture><source srcset="./img/i3.webp" type="image/webp"><img src="./img/i3.png" alt=""></picture>
+            <img src="./img/i3.svg" alt="">
          </div>
          <div class="blog__conteiner">
             <div class="blog__conteiner_left">
                <p class="blog__title">От тактики к стратегии: что такое сервис-дизайн?</p>
                <p class="blog__text">Сервис-дизайн — это проектирование, выстраивание и оптимизация процессов компании, с целью обеспечить как пользователям, так и сотрудникам «тот самый» опыт взаимодействия, о котором они мечтали.</p>
-               <p class="blog__time"><picture><source srcset="./img/t1.webp" type="image/webp"><img src="./img/t1.png" alt=""></picture> 6 мин</p>
+               <div class="blog__time">
+                  <img src="./img/t1.svg" alt="time"> 
+                  <p>6 мин</p>
+               </div>
             </div>
             <div class="blog__conteiner_rigth">
                <button class="blog__kind">Статья</button>
@@ -195,13 +208,16 @@
       </div>
       <div class="blog__box">
          <div class="blog__box_img">
-            <picture><source srcset="./img/i4.webp" type="image/webp"><img src="./img/i4.png" alt=""></picture>
+            <img src="./img/i4.svg" alt="">
          </div>
          <div class="blog__conteiner">
             <div class="blog__conteiner_left">
                <p class="blog__title">Что такое UX и UI дизайн и кто такие пользователи?</p>
                <p class="blog__text">В продуктовом дизайне на слово user (пользователь) и производные слова лежат в основе взаимоотношений между человеком и технологиями.</p>
-               <p class="blog__time"><picture><source srcset="./img/t1.webp" type="image/webp"><img src="./img/t1.png" alt=""></picture> 8 мин</p>
+               <div class="blog__time">
+                  <img src="./img/t1.svg" alt="time"> 
+                  <p>8 мин</p>
+               </div>
               
             </div>
             <div class="blog__conteiner_rigth">
@@ -218,7 +234,7 @@
 	<footer class="footer container">
 		 <div class="footer__line1">
 			<h1 class="footer__title">Начать проект</h1>
-			<svg xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="0 0 92 92" fill="none">
+			<svg class="footer__line1_svg" xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="0 0 92 92" fill="none">
 				<path d="M92 0V87.7463H91.9648L78.5254 79.9419V22.9912L9.53422 92L0 82.4731L82.501 0.0351548V0H92Z" fill="#141414"/>
 				<path d="M3.375 0H73.7279L60.174 12.8529H11.2313L3.375 0.0335586V0Z" fill="#141414"/>
 				</svg>
@@ -244,7 +260,7 @@
 		 
 	</footer>
 
-	<script src="js/app.min.js?_v=20230715162508"></script>
+	<script src="js/app.min.js"></script>
 	</body>
 
 	</html>
