@@ -2525,6 +2525,36 @@ html {
   opacity: 0;
 }
 
+#cursor.hoverP {
+  background: none;
+  background-image: url(../img/cursor.svg);
+  width: 3vw;
+  height: 3vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 0;
+  mix-blend-mode: normal;
+}
+
+#circle.hoverPc {
+  background-image: url(../img/round.svg);
+  width: 7vw;
+  height: 9vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 99;
+  border: none;
+  transition: all 0.5s ease;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -2548,6 +2578,7 @@ html {
   display: flex;
   justify-content: space-between;
   gap: 7%;
+  width: 50%;
 }
 .header__links a, .header__links p {
   font-size: 100%;
@@ -2815,7 +2846,7 @@ html {
 }
 
 .paralex {
-  cursor: url(../img/cursor.svg) 32 32, auto;
+  /* cursor: url(../img/cursor.svg) 32 32, auto; */
   text-align: center;
   position: absolute;
   width: 97%;
@@ -2915,7 +2946,7 @@ html {
   width: 100%;
   height: 100%;
   object-position: center;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .slider__box_profit {
@@ -3181,15 +3212,16 @@ html {
 }
 
 .animation__svg {
-  animation: an 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  animation: an 0.4s linear forwards;
 }
 
+/* cubic-bezier(0.075, 0.82, 0.165, 1) */
 .animation__svg_not {
-  animation: vr 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  animation: vr 0.4s linear forwards;
 }
 
 @keyframes an {
-  50% {
+  10% {
     transform: rotate(45deg);
   }
   100% {
@@ -3200,8 +3232,11 @@ html {
   from {
     transform: rotate(45deg) translate3d(13vw, -13vw, 0px);
   }
-  90% {
-    transform: rotate(45deg) translate3d(0px, 0px, 0px);
+  /* 50% {
+      transform: rotate(45deg)  translate3d(5vw, 5vw, 0px);
+  } */
+  51% {
+    transform: translate3d(5vw, 0vw, 0px) rotate(0deg);
   }
 }
 .footer__title {
