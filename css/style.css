@@ -2428,7 +2428,7 @@ main {
   position: relative;
 }
 
-html {
+.slider-fix {
   cursor: none;
 }
 
@@ -2497,6 +2497,7 @@ html {
   mix-blend-mode: difference;
   z-index: 9;
   transition: transform 0.5s;
+  display: none;
 }
 
 #cursor.hovered2 {
@@ -2504,6 +2505,7 @@ html {
 }
 
 #circle {
+  display: none;
   position: absolute;
   pointer-events: none;
   opacity: 1;
@@ -2513,7 +2515,7 @@ html {
   left: calc(50% - 25px);
   border-radius: 50%;
   border: 2px solid #606060;
-  transition: all 0.3s cubic-bezier(0, 0.5, 1, 1);
+  transition: all 0.05s cubic-bezier(0, 0.5, 1, 1);
   z-index: 0;
 }
 
@@ -2526,6 +2528,7 @@ html {
 }
 
 #cursor.hoverP {
+  display: block;
   background: none;
   background-image: url(../img/cursor.svg);
   width: 3vw;
@@ -2538,6 +2541,7 @@ html {
 }
 
 #circle.hoverPc {
+  display: block;
   background-image: url(../img/round.svg);
   width: 7vw;
   height: 9vw;
@@ -2546,7 +2550,7 @@ html {
   background-position: center;
   z-index: 99;
   border: none;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
   animation: rotate 5s linear infinite;
 }
 
@@ -2617,7 +2621,7 @@ html {
   background-color: #fff;
   color: #141414;
   border: 1px solid #141414;
-  transition: all 0.4s linear;
+  transition: all 0.2s linear;
 }
 .header__btn:hover {
   background: #141414;
@@ -3004,7 +3008,7 @@ html {
   border-radius: 4.1666666667vw;
   border: 1px solid #141414;
   margin-top: 20px;
-  transition: all 0.4s linear;
+  transition: all 0.2s linear;
 }
 .slider__box_btn:hover {
   background-color: #141414;
@@ -3171,7 +3175,7 @@ html {
   border-radius: 30px;
   border: 1px solid #141414;
   padding: 1% 14%;
-  transition: all 0.6s linear;
+  transition: all 0.2s linear;
 }
 .blog__kind:hover {
   background-color: #141414;
@@ -3206,8 +3210,8 @@ html {
   transition: transform 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .footer__line1 svg {
-  width: 6.38%;
-  height: 6.38%;
+  width: 5.38%;
+  height: 5.38%;
   /* margin-bottom: calc( 2.2vw + (100vw/1440));   */
 }
 
@@ -3248,7 +3252,7 @@ html {
 }
 
 .footer__line2 {
-  margin: 1.8% auto 3%;
+  margin: 3% auto 3%;
   display: flex;
   justify-content: space-between;
 }
