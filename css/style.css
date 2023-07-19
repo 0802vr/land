@@ -3172,7 +3172,7 @@ main {
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
-  border-radius: 30px;
+  border-radius: 4.1666666667vw;
   border: 1px solid #141414;
   padding: 1% 14%;
   transition: all 0.2s linear;
