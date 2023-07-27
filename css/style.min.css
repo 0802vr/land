@@ -742,6 +742,11 @@ button {
     font-size: 480%;
   }
 }
+@media (max-width: 450px) {
+  h1 {
+    font-size: 650%;
+  }
+}
 @media (max-width: 400px) {
   h2 {
     font-size: 440%;
