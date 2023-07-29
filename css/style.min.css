@@ -4108,4 +4108,7 @@ main {
   .footer__title {
     letter-spacing: -0.5px;
   }
+  .footer__line3_politice {
+    color: #606060;
+  }
 }
