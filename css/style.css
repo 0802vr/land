@@ -5516,13 +5516,12 @@ main {
   gap: 20px;
 }
 
-.case__banner_logo_img1 {
-  width: 48%;
+/* .case__banner_logo_img1 {
+    width: 48%; 
 }
-
-.case__banner_logo_img2 {
-  width: 50%;
-}
+.case__banner_logo_img2{
+     width: 50%; 
+} */
 
 .case__tasks {
   padding-top: 50px;
@@ -6257,6 +6256,17 @@ main {
 
   .case__projects_box {
     margin: 70px 0;
+  }
+
+  .case__tasks,
+  .case__decision {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .case__service {
+    padding-top: 10px;
+    padding-bottom: 30px;
   }
 }
 
