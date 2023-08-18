@@ -6,19 +6,25 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230816204232">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230818211507">
 	<title>Проекты</title>
 	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap&_v=20230816204232" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap&_v=20230818211507" rel="stylesheet">
 
 	
 </head>
 
 
 
-<body class="body_projects">
+<body data-barba="wrapper">
+    
+    <div data-barba="container"  class="body_projects" data-barba-namespace="project"> 
+        <div class="preloader">
+            <h2 class="preloader__title"></h2>
+         </div>
+
     <div class="footer_projects">
     <header class="header container">
     <a class="header__logo" data-aos="fade-up" data-aos-delay="0" href="./index.html">
@@ -99,10 +105,11 @@
     </div>  
 </header>
     </div>
-   
-    <div data-barba="container" data-barba-namespace="project">
-        <div class="preloader"></div>   
+    
+    
+       
 <main class="menu menu_projects" >
+    
         <section class="projects container">            
             <div class="projects__box">
                 <h2 class="projects__title" data-aos="fade-right" data-aos-delay="350">Проекты</h2>
@@ -125,7 +132,7 @@
             <div class="projects__conteiner">
     <div class="projects__conteiner_line">
         <a class="projects__conteiner_line_card" href="./caseProfit.html">
-            <div class="projects__conteiner_line_img_box projects__conteiner_line_img_box_1" data-aos="AfterO" data-aos-delay="600" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" >
+            <div class="projects__conteiner_line_img_box projects__conteiner_line_img_box_1" data-aos="AfterO" data-aos-delay="600" data-aos-duration="3000"    data-aos-anchor-placement="top-bottom" >
                 <picture><source srcset="./img/c2.webp" type="image/webp"><img class="projects__conteiner_line_img"  src="./img/c2.png" alt="profit"></picture>
             </div>                        
             <h6 class="projects__conteiner_line_title" data-aos="fade-right" data-aos-delay="750" data-aos-duration="400" data-aos-anchor-placement="top-bottom">Profit</h6>
@@ -157,12 +164,13 @@
     </div>
 </div>
 <!-- data-aos="zoom-in" data-aos-delay="1050" data-aos-duration="300" data-aos-anchor-placement="" -->            
-            </div>
+             
             
              
         </section>
+     
     </main>
-</div>
+
     <div class="footer_projects">
         	<footer class="footer container">
 		 <div class="footer__line1" data-aos="fade-right" data-aos-delay="100">
@@ -199,8 +207,8 @@
 		 
 	</footer>
 
-	 <script src="js/app.min.js?_v=20230816204232"></script> 
-	
+	 <script src="js/app.min.js?_v=20230818211507"></script> 
+	</div>
 	</body>
 
 	</html>

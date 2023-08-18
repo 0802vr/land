@@ -7,20 +7,26 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230816204232">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230818211507">
 	<title>Главная</title>
 	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap&_v=20230816204232" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap&_v=20230818211507" rel="stylesheet">
 
 	
 </head>
 
 
       
-      <body  data-barba="wrapper">
+      <body data-barba="wrapper" >
          
+         <div data-barba="container" data-barba-namespace="index" data-barba-prevent="self"> 
+            <div class="preloader">
+               <h2 class="preloader__title"></h2>
+            </div> 
+            <div id="cursor"></div>
+            <div id="circle"></div>
          
       <header class="header container">
     <a class="header__logo" data-aos="fade-up" data-aos-delay="0" href="./index.html">
@@ -100,16 +106,13 @@
         </div>
     </div>  
 </header>
-
-
-<div data-barba="container" data-barba-namespace="index">
-   <div id="cursor"></div>
-   <div id="circle"></div>
-   <div class="preloader"></div>   
-<main class="menu">   
-   
-   <section class="container banner__main">
       
+
+
+   
+    
+<main class="menu" >    
+   <section class="container banner__main"> 
      <!--  <h2 class="banner__main_title">Эмоции от увиденного всегда</h2>
       <h2 class="banner__main_title">остаются в памяти </h2> -->
       <h2 class="banner__main_title" data-aos="fade-up" data-aos-delay="250">Эмоции от увиденного всегда</h2>
@@ -190,7 +193,7 @@
          </a> 
    </section>
    <section class="slider__box container" data-aos="fade-up" data-aos-delay="50">
-      <button class="slider__box_btn "   onclick="location.href='./projects.html'" type="button">Посмотреть все</button> 
+    <a href="./projects.html"><button class="slider__box_btn "  type="button">Посмотреть все</button> </a>  
    </section>
    <section class="clients">
       <div class="container">
@@ -331,11 +334,11 @@
             
          </div>
       </div>
-      <button class="slider__box_btn " data-aos="fade-up" data-aos-delay="50" onclick="location.href='./projects.html'" type="button">Посмотреть все</button> 
+      <a href="./projects.html"><button class="slider__box_btn " data-aos="fade-up" data-aos-delay="50" type="button">Посмотреть все</button></a> 
    </section>
-    
+     
 </main>
-</div> 
+ 
 	<footer class="footer container">
 		 <div class="footer__line1" data-aos="fade-right" data-aos-delay="100">
 			<h1 class="footer__title">Начать проект</h1>
@@ -371,9 +374,8 @@
 		 
 	</footer>
 
-	 <script src="js/app.min.js?_v=20230816204232"></script> 
-	
+	 <script src="js/app.min.js?_v=20230818211507"></script> 
+	</div>
 	</body>
 
 	</html>
- 
