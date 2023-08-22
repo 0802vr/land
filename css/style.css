@@ -3308,6 +3308,11 @@ main {
   cursor: pointer;
 }
 
+.header__logo_svg {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
 .header__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4774,6 +4779,13 @@ main {
   padding: 0.5% 3%;
   white-space: nowrap;
   color: #606060;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.projects_btn:hover {
+  background-color: #212121;
+  color: #fff;
 }
 
 .projects_btn_active {
@@ -5157,7 +5169,7 @@ main {
 
   to {
     opacity: 1;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 
@@ -5174,20 +5186,20 @@ main {
 
   to {
     opacity: 1;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 
 @-webkit-keyframes fadeOutFromBlock {
   from {
     opacity: 1;
-    margin-top: 20px;
+    margin-top: 10px;
     max-height: 20vw;
   }
 
   50% {
     opacity: 0;
-    margin-top: 20px;
+    margin-top: 10px;
     max-height: 0;
   }
 
@@ -5201,13 +5213,13 @@ main {
 @keyframes fadeOutFromBlock {
   from {
     opacity: 1;
-    margin-top: 20px;
+    margin-top: 10px;
     max-height: 20vw;
   }
 
   50% {
     opacity: 0;
-    margin-top: 20px;
+    margin-top: 10px;
     max-height: 0;
   }
 
@@ -5328,8 +5340,8 @@ main {
 .stages__card_text {
   -webkit-transition: all 1s;
   transition: all 1s;
-  width: 90%;
-  padding-right: 5%;
+  width: calc(100% - 60px);
+  padding-right: 20px;
 }
 
 .stages__card_img {
@@ -5434,7 +5446,7 @@ main {
 }
 
 .case__banner img {
-  max-height: 70vh;
+  max-height: 85vh;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
@@ -5483,16 +5495,23 @@ main {
   font-weight: 400;
   line-height: 130%;
   /* 23.4px */
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   cursor: pointer;
 }
 
+.case__service_subtitle:nth-child(2) {
+  -webkit-animation: blinker 1.5s linear 2;
+          animation: blinker 1.5s linear 2;
+}
+
 .case__service_subtitle:hover {
   color: #141414;
+  -webkit-animation: none;
+          animation: none;
 }
 
 .case__service_subtitle::after {
@@ -5503,6 +5522,8 @@ main {
   background: #fff;
   -webkit-transition: width 0.6s;
   transition: width 0.6s;
+  -webkit-animation: none;
+          animation: none;
 }
 
 .case__service_subtitle:hover::after {
@@ -5514,6 +5535,38 @@ main {
 
 .case__service_subtitle:nth-child(2n-1) {
   margin: 8px 0 8px;
+}
+
+@-webkit-keyframes blinker {
+  from {
+    color: #141414;
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  to {
+    color: #141414;
+    opacity: 1;
+  }
+}
+
+@keyframes blinker {
+  from {
+    color: #141414;
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  to {
+    color: #141414;
+    opacity: 1;
+  }
 }
 
 .case__service_nav {
@@ -5532,6 +5585,10 @@ main {
   font-size: 18px;
   font-weight: 500;
   line-height: normal;
+}
+
+a .case__client_name {
+  text-decoration: underline;
 }
 
 .case__service_box_project_title {
@@ -5681,15 +5738,18 @@ main {
   margin: 180px 0;
 }
 
+/* @media screen {
+    .case__tasks__list {
+        margin-left: 20px;
+    }
+} */
+
 .preloader {
   position: fixed;
   z-index: 99;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-size: 350%;
@@ -5710,11 +5770,13 @@ main {
   font-size: 150%;
   /* transform: translateX(100%); */
   color: #fff;
-  -webkit-transition: -webkit-transform 0.7s;
-  transition: -webkit-transform 0.7s;
-  transition: transform 0.7s;
-  transition: transform 0.7s, -webkit-transform 0.7s;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
   margin-left: 50%;
+  margin-bottom: 30vh;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6157,6 +6219,7 @@ main {
 
   .case__service {
     padding-top: 20px;
+    padding-bottom: 30px;
   }
 }
 
@@ -6436,7 +6499,7 @@ main {
   }
 
   .case__tasks__list {
-    margin-left: 3vw;
+    margin-left: 20px;
   }
 
   .case__projects_box {
@@ -6469,6 +6532,7 @@ main {
   .case__service {
     padding-top: 10px;
     padding-bottom: 30px;
+    gap: 30px;
   }
 
   .case__banner_logo {
@@ -6487,12 +6551,37 @@ main {
   .case__service_nav {
     width: 90%;
     row-gap: 10px;
+    -webkit-column-gap: 78px;
+       -moz-column-gap: 78px;
+            column-gap: 78px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 
   .case__service__box {
     width: 100%;
+  }
+
+  .case__tasks__title,
+  .case__service_title,
+  .case__decision_title,
+  .case__service_box_project_title {
+    font-size: 22px;
+  }
+
+  .case__service_box_project_text,
+  .tasks__list_item,
+  .case__decision_text {
+    font-size: 18px;
+  }
+
+  .case__service_title {
+    font-size: 16px;
+  }
+
+  .case__service_subtitle,
+  .case__client_name {
+    font-size: 18px;
   }
 }
 
@@ -6543,7 +6632,7 @@ main {
     to {
       opacity: 1;
       max-height: 20vw;
-      margin-top: 16px;
+      margin-top: 10px;
     }
 }
 
@@ -6557,14 +6646,14 @@ main {
     to {
       opacity: 1;
       max-height: 20vw;
-      margin-top: 16px;
+      margin-top: 10px;
     }
 }
 
 @-webkit-keyframes fadeOutFromBlock {
     from {
       opacity: 1;
-      margin-top: 16px;
+      margin-top: 10px;
       max-height: 20vw;
     }
 
@@ -6578,7 +6667,7 @@ main {
 @keyframes fadeOutFromBlock {
     from {
       opacity: 1;
-      margin-top: 16px;
+      margin-top: 10px;
       max-height: 20vw;
     }
 
@@ -6935,7 +7024,7 @@ main {
     to {
       opacity: 1;
       max-height: 30vw;
-      margin-top: 16px;
+      margin-top: 10px;
     }
 }
 
@@ -6949,14 +7038,14 @@ main {
     to {
       opacity: 1;
       max-height: 30vw;
-      margin-top: 16px;
+      margin-top: 10px;
     }
 }
 
 @-webkit-keyframes fadeOutFromBlock {
     from {
       opacity: 1;
-      margin-top: 16px;
+      margin-top: 10px;
       max-height: 30vw;
     }
 
@@ -6970,7 +7059,7 @@ main {
 @keyframes fadeOutFromBlock {
     from {
       opacity: 1;
-      margin-top: 16px;
+      margin-top: 10px;
       max-height: 30vw;
     }
 
@@ -7094,6 +7183,11 @@ main {
     -o-object-fit: initial;
        object-fit: initial;
     border-radius: 3px;
+  }
+
+  .case_scroll,
+  .case__banner_logo {
+    gap: 10px;
   }
 }
 
