@@ -4530,6 +4530,10 @@ main {
   width: fit-content;
 }
 
+.blog__box_first {
+  border-top: #BEBEBE 1px solid;
+}
+
 .blog__time_pl {
   display: none;
 }
@@ -4943,7 +4947,7 @@ main {
           align-items: end;
   color: var(--color);
   width: 100%;
-  min-height: 70vh;
+  height: 70vh;
   background-color: #F3F3F3;
   border-radius: 10px;
   opacity: 0.2;
@@ -5052,6 +5056,10 @@ main {
   transition: all 1s;
   width: 95%;
   visibility: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .description__box_img {
@@ -5293,6 +5301,7 @@ main {
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
+  visibility: hidden;
 }
 
 .stages__cont {
@@ -5304,6 +5313,8 @@ main {
   border-bottom: 1px solid #bebebe;
   cursor: pointer;
   padding: 20px 0;
+  -webkit-transition: all 0.6s linear;
+  transition: all 0.6s linear;
   /* &:hover{
       background: #f2f2f2;
 
@@ -5340,8 +5351,10 @@ main {
 .stages__card_text {
   -webkit-transition: all 1s;
   transition: all 1s;
+  max-height: 0;
   width: calc(100% - 60px);
   padding-right: 20px;
+  overflow: hidden;
 }
 
 .stages__card_img {
@@ -5364,6 +5377,7 @@ main {
 .stages__card.active__card_des .stages__card_text {
   -webkit-animation: fadeStageOff 0.6s ease forwards;
           animation: fadeStageOff 0.6s ease forwards;
+  visibility: visible;
 }
 
 .stages__card.active__card_des:hover {
@@ -5373,22 +5387,16 @@ main {
 .stages__card .stages__card_text {
   -webkit-animation: fadeStageOn 0.6s ease forwards;
           animation: fadeStageOn 0.6s ease forwards;
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
 }
 
 @-webkit-keyframes fadeStageOff {
   from {
     opacity: 0;
     max-height: 0;
-    margin: 0;
-  }
-
-  90% {
-    max-height: 20vw;
   }
 
   to {
+    max-height: 20vw;
     opacity: 1;
   }
 }
@@ -5397,14 +5405,10 @@ main {
   from {
     opacity: 0;
     max-height: 0;
-    margin: 0;
-  }
-
-  90% {
-    max-height: 20vw;
   }
 
   to {
+    max-height: 20vw;
     opacity: 1;
   }
 }
@@ -5413,10 +5417,6 @@ main {
   from {
     opacity: 1;
     max-height: 20vw;
-  }
-
-  90% {
-    opacity: 0;
   }
 
   to {
@@ -5431,10 +5431,6 @@ main {
     max-height: 20vw;
   }
 
-  90% {
-    opacity: 0;
-  }
-
   to {
     opacity: 0;
     max-height: 0;
@@ -5446,7 +5442,7 @@ main {
 }
 
 .case__banner img {
-  max-height: 85vh;
+  max-height: 77vh;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
@@ -5588,7 +5584,31 @@ main {
 }
 
 a .case__client_name {
-  text-decoration: underline;
+  border-bottom: #141414 1px solid;
+  /*  text-decoration: underline; */
+}
+
+a .case__client_name:hover {
+  border-bottom: none;
+}
+
+a .case__client_name::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  -webkit-transition: width 0.6s;
+  transition: width 0.6s;
+  -webkit-animation: none;
+          animation: none;
+}
+
+a .case__client_name:hover::after {
+  width: 100%;
+  -webkit-transition: width 0.6s;
+  transition: width 0.6s;
+  background: #141414;
 }
 
 .case__service_box_project_title {
@@ -5773,10 +5793,8 @@ a .case__client_name {
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
   margin-left: 50%;
-  margin-bottom: 30vh;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  margin-top: 50vh;
+  /* align-items: flex-end; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6577,11 +6595,48 @@ a .case__client_name {
 
   .case__service_title {
     font-size: 16px;
+    margin-bottom: 6px;
   }
 
   .case__service_subtitle,
   .case__client_name {
     font-size: 18px;
+  }
+
+  .case__service_subtitle {
+    line-height: 100%;
+  }
+
+  .case__service_subtitle:nth-child(2n-1) {
+    margin: 6px 0;
+  }
+
+  .case__client_name {
+    line-height: 100%;
+  }
+
+  .case__banner {
+    border-radius: 3px;
+  }
+
+  .case__banner img {
+    height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3px;
+  }
+
+  .liftberg .case__banner img {
+    -o-object-position: 10%;
+       object-position: 10%;
+  }
+
+  .liftberg .case__banner_logo img {
+    height: 40vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 45%;
+       object-position: 45%;
   }
 }
 
@@ -7178,15 +7233,9 @@ a .case__client_name {
     font-size: 16px;
   }
 
-  .case__banner img {
-    height: 50vw;
-    -o-object-fit: initial;
-       object-fit: initial;
-    border-radius: 3px;
-  }
-
   .case_scroll,
-  .case__banner_logo {
+  .case__banner_logo,
+  .case_scroll_row {
     gap: 10px;
   }
 }
