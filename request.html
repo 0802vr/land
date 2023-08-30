@@ -7,12 +7,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230829164921">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230830131406">
 	<title>Заявка</title>
 	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap&_v=20230829164921" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap&_v=20230830131406" rel="stylesheet">
 
 	
 </head>
@@ -115,11 +115,11 @@
  
   
 <main class="menu" >    
- <section class="request__main container">
+ <section class="request__main container" data-aos="fade-up" data-aos-delay="450">
    <h2 class="request__main_title">Оставьте заявку</h2>
  </section>
  <section class="request__box container">
-   <div class="request__box_left">
+   <div class="request__box_left" data-aos="fade-up" data-aos-delay="550">
       <div class="request__box_left_table">
          <p class="request__box_left_text">Yanstoke.team@gmail.com</p>
          <p class="request__box_left_text request__box_left_phone">+7 904 667-01-48</p>
@@ -130,15 +130,21 @@
       </div>
    </div>
    <div class="request__box_rigth">
-      <form action="">
-      <div class="request__box_rigth_box request__box_contact">
+   <!-- Hidden Required Fields -->
+   <input type="hidden" name="project_name" value="Site Name">
+   <input type="hidden" name="admin_email" value="vasyarovnov0802@gmail.com">
+   <input type="hidden" name="form_subject" value="Form Subject">
+   <!-- END Hidden Required Fields -->
+
+      <form action="" class="form">
+      <div class="request__box_rigth_box request__box_contact" data-aos="fade-up" data-aos-delay="650">
          <h6 class="request__box_rigth_title">Ваши контакты</h6>
-         <input class="request__box_rigth_input" type="text" placeholder="Имя">
-         <input class="request__box_rigth_input" type="number" placeholder="Телефон">
-         <input class="request__box_rigth_input" type="email" placeholder="E-mail">
-         <input class="request__box_rigth_input" type="text" placeholder="Компания">
+         <input class="request__box_rigth_input" name="name" type="text" placeholder="Имя">
+         <input class="request__box_rigth_input" name="number" type="number" placeholder="Телефон">
+         <input class="request__box_rigth_input" name="email" type="email" placeholder="E-mail">
+         <input class="request__box_rigth_input" name="text" type="text" placeholder="Компания">
       </div>
-      <div class="request__box_rigth_box request__box_service">
+      <div class="request__box_rigth_box request__box_service" data-aos="fade-up" data-aos-delay="750">
          <h6 class="request__box_rigth_title">Услуга</h6>
          <div class="request__box_rigth_box_btns">
             <button  class="request__box_rigth_btn request_btn_active" type="button">Лендинг</button>
@@ -157,7 +163,7 @@
             <button class="request__box_rigth_btn" type="button">Иллюстрации</button>
       </div>
       </div>
-      <div class="request__box_rigth_box request__box_price">
+      <div class="request__box_rigth_box request__box_price"data-aos="fade-up" data-aos-delay="850">
          <h6 class="request__box_rigth_title">Бюджет</h6>
          <div class="request__box_price_table">
             <button class="request__box_rigth_btn request_btn_active" type="button">от 250 тыс руб</button>
@@ -167,7 +173,7 @@
          </div>
         
       </div>
-      <div class="request__box_rigth_box request__box_target">
+      <div class="request__box_rigth_box request__box_target" data-aos="fade-up" data-aos-delay="950">
          <h6 class="request__box_rigth_title">Задача</h6>
          <textarea name="" id="" class="request__box_rigth_textarea" placeholder="Опишите вашу задачу"></textarea>
          <input type="file" id="file-input" name="file-input">
@@ -196,8 +202,45 @@
    
 </main>
 
-<script src="js/app.min.js?_v=20230829164921"></script> 
-</div>
-</body>
+	<footer class="footer container">
+		 <div class="footer__line1" data-aos="fade-right" data-aos-delay="100">
+			<a href="./request.html">
+			<h1 class="footer__title">Начать проект</h1>
+			<svg class="footer__line1_svg" xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="0 0 92 92" fill="none">
+				<path d="M92 0V87.7463H91.9648L78.5254 79.9419V22.9912L9.53422 92L0 82.4731L82.501 0.0351548V0H92Z" fill="#141414"/>
+				<path d="M3.375 0H73.7279L60.174 12.8529H11.2313L3.375 0.0335586V0Z" fill="#141414"/>
+				</svg>
+			</a>	
+		 </div>
+		 <div class="footer__line2" data-aos="fade-right" data-aos-delay="500" data-aos-anchor-placement="top-bottom">
+			<p>Yanstoke.team@gmail.com</p>
+			<div class="footer__box">
+				<p>+7 904 667-01-48</p>
+				<div class="footer__contacts footer__contacts_dec">
+					<p>Telegram</p>
+					<p>WhatsApp</p>
+					<p>Behance</p>
+				</div>
+			</div>
+			
+			
+			
+		 </div>
+		 <div class="footer__contacts footer__contacts_pl" data-aos="fade-right" data-aos-delay="600" data-aos-anchor-placement="top-bottom">
+			<p>Telegram</p>
+			<p>WhatsApp</p>
+			<p>Behance</p>
+		</div>
+		 <div class="footer__line3" data-aos="fade-right" data-aos-delay="700" data-aos-anchor-placement="top-bottom">
+			<p>©Yanstoke2023</p>
+			<p  class="footer__line3_politice">Политика конфиденциальности</p>
+		 </div>
+			
+		 
+	</footer>
 
-</html>
+	 <script src="js/app.min.js?_v=20230830131406"></script> 
+	</div>
+	</body>
+
+	</html>
