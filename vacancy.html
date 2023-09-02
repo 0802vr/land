@@ -4,13 +4,13 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230830134544">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230902185940">
 	<title>Вакансии</title>
 	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap&_v=20230830134544" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js?_v=20230830134544"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap&_v=20230902185940" rel="stylesheet">
+	<!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js?_v=20230902185940"></script> -->
 	
 </head>
 
@@ -18,7 +18,7 @@
 
 <body data-barba="wrapper">
 
-   <div data-barba="container" class="vacancy__conteiner"  data-barba-namespace="Вакансии" data-barba-prevent="self">
+   <div data-barba="container"  data-barba-namespace="Вакансии" data-barba-prevent="self">
       <div class="preloader">
          <h2 class="preloader__title"></h2>
 
@@ -259,20 +259,30 @@
    <div class="request__work_box" >
       <form action="">
          <div class="request__work_box_info" data-aos="fade-up" data-aos-delay="850">
-            <select name="city" id="work-select" class="request__work_select">
-               <option value="">UX/UI designer (middle)</option>
-               <option value="petersburg">front</option>
-               <option value="samara">back</option>
-               <option value="perm">pr</option>
-               <option value="novosibirsk">hr</option>
-             </select>
+               <div class="select">
+    <div class="select__body">
+       <div class="select__item">UX/UI designer (middle)</div>
+       <div class="select__item">Frontend developer</div>
+       <div class="select__item">Backend developer</div>
+       <div class="select__item">Webflow developer</div>
+       <div class="select__item">Product designer (middle)</div>
+       <div class="select__item">Проект-менеджер</div>
+       <div class="select__item">Иллюстратор</div>
+       <div class="select__item">Ассистент</div>
+    </div>
+    <div class="select__header">
+       <span class="select__current">UX/UI designer (middle)</span>
+       <img class="select__icon"  src="./img/hsvg2.svg" alt="img">
+    </div> 
+    
+ </div>
              <input type="text" placeholder="Имя" class="request__work_input">
              <input type="text" placeholder="Ссылка на портфолио" class="request__work_input">
              <input type="email" placeholder="E-mail" class="request__work_input">
          </div>        
 
          <input type="file" id="file-input-v" name="file-input-v" data-aos="fade-up" data-aos-delay="950">
-         <label id="file-input-label-v" for="file-input-v"> 
+         <label id="file-input-label-v" for="file-input-v" data-aos="fade-up" data-aos-delay="950"> 
             <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
                <g clip-path="url(#clip0_1737_1316)">
                  <path d="M8.66511 21.07C10.5705 22.6688 13.4061 22.4207 15.0049 20.5154L21.0529 13.3076L20.1128 12.5187L14.0647 19.7265C12.9024 21.1116 10.8391 21.2921 9.45398 20.1299C8.06884 18.9676 7.88832 16.9043 9.0506 15.5191L15.6246 7.6846C15.9733 7.26903 16.4728 7.009 17.0132 6.96172C17.5536 6.91444 18.0907 7.08378 18.5063 7.43249C18.9218 7.78119 19.1819 8.2807 19.2291 8.82112C19.2764 9.36155 19.1071 9.89862 18.7584 10.3142L13.2363 16.8952C12.947 17.2399 12.4283 17.2853 12.0836 16.9961C11.7389 16.7068 11.6935 16.1881 11.9827 15.8434L16.9789 9.88912L16.0388 9.10024L11.0426 15.0545C10.6939 15.4701 10.5245 16.0071 10.5718 16.5476C10.6191 17.088 10.8791 17.5875 11.2947 17.9362C11.7103 18.2849 12.2473 18.4542 12.7878 18.407C13.3282 18.3597 13.8277 18.0997 14.1764 17.6841L19.6985 11.1031C20.8608 9.71792 20.6803 7.65462 19.2951 6.49234C17.91 5.33006 15.8467 5.51058 14.6844 6.89573L8.11045 14.7303C6.51167 16.6356 6.75975 19.4712 8.66511 21.07Z" fill="#141414"/>
@@ -335,7 +345,7 @@
 		 
 	</footer>
 
-	 <script src="js/app.min.js?_v=20230830134544"></script> 
+	 <script src="js/app.min.js?_v=20230902185940"></script> 
 	</div>
 	</body>
 
