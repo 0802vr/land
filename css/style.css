@@ -6038,6 +6038,7 @@ a .case__client_name:hover::after {
   font-weight: 400;
   line-height: 130%;
   width: 80%;
+  max-width: 680px;
 }
 
 .InBlog__main_rigthConteiner_list {
