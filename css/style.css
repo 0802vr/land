@@ -6903,11 +6903,18 @@ a .case__client_name:hover::after {
 }
 
 .select.is-active {
-  margin-bottom: 300px;
+  margin-bottom: 270px;
 }
 
 .select.is-active .select__body {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
   opacity: 0;
   -webkit-animation: FadeInSelect 1s ease forwards;
           animation: FadeInSelect 1s ease forwards;
@@ -6951,6 +6958,13 @@ a .case__client_name:hover::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.select.is-active .select__header {
+  border-bottom: none;
 }
 
 .select__current {
@@ -6988,12 +7002,18 @@ a .case__client_name:hover::after {
           animation: FadeInSelect 1s linear forwards;
 }
 
+.select.is-active .select__body {
+  border-bottom: 1px solid #141414;
+}
+
 .select__body {
+  margin-left: 8px;
   display: none;
   left: -8px;
   position: absolute;
   right: 0;
   top: 35px;
+  padding-bottom: 10px;
 }
 
 .select__item {
@@ -7002,7 +7022,8 @@ a .case__client_name:hover::after {
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
-  padding: 8px;
+  /* padding-top: 5px;	 
+  padding-bottom: 5px;	  */
   color: #bebebe;
 }
 
