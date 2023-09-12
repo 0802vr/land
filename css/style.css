@@ -6931,7 +6931,8 @@ a .case__client_name:hover::after {
   }
 
   to {
-    display: block;
+    display: -webkit-box;
+    display: flex;
     opacity: 1;
   }
 }
@@ -6947,7 +6948,9 @@ a .case__client_name:hover::after {
   }
 
   to {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     opacity: 1;
   }
 }
