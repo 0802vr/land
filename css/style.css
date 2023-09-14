@@ -5798,7 +5798,7 @@ a .case__client_name:hover::after {
   color: #fff;
   background: #000;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   top: 100%;
   left: 0%;
   margin: 0;
@@ -6802,10 +6802,11 @@ a .case__client_name:hover::after {
   transition: -webkit-transform 0.4s linear;
   transition: transform 0.4s linear;
   transition: transform 0.4s linear, -webkit-transform 0.4s linear;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: self-start;
+      -ms-grid-row-align: self-start;
+      align-self: self-start;
   margin-right: 3px;
+  margin-top: 3px;
 }
 
 .request__work {
@@ -7654,9 +7655,9 @@ a .case__client_name:hover::after {
     height: 11px;
   }
 
-  .header__btn {
+  a .header__btn {
     font-size: 16px;
-    border-radius: 200px;
+    border-radius: 20px;
     padding: 10px;
     -webkit-transform: translate(0, calc(100vh - 350px));
         -ms-transform: translate(0, calc(100vh - 350px));
@@ -8326,6 +8327,10 @@ a .case__client_name:hover::after {
   .vacancy__main_title {
     font-size: 40px;
     padding-bottom: 10px;
+  }
+
+  .vacancy__box_item_line {
+    margin-top: 0;
   }
 
   .request__work_select {
